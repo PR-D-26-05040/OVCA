@@ -198,6 +198,14 @@ CUDA_VISIBLE_DEVICES=0 python -m torch.distributed.run \
     --resume /path/to/checkpoint.pth
 ```
 
+## Pretrained Model
+
+You can download the pre‑trained checkpoint from Google Drive:
+[pre‑trained checkpoint](https://drive.google.com/file/d/1StzAKAXNIQYyGnVvaK-6IZsxJZh-lPOD/view?usp=drive_link)
+
+After downloading, place the `.pth` checkpoint file to your local path,
+which can be used for evaluation or resuming training via `--resume` argument.
+
 ## Evaluation
 
 When `--resume` and `--eval` are provided together, the program loads the
